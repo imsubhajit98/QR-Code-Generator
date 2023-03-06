@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -64,6 +65,16 @@ border-radius: 10px;
 .error{
     animation: shake 0.1s linear 10;
 }
+
+h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 @keyframes shake{
     0%{
         transform: translateX(0);
@@ -79,5 +90,17 @@ border-radius: 10px;
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .container{
+        width: 300px;
     }
 }
